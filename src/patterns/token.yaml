@@ -1,0 +1,10 @@
+recognizers:
+  - name: "Token Serial Number Recognizer"
+    supported_entity: "TokenSerialNumber"
+    supported_language: "en"
+    patterns:
+      - name: "Token Serial Number Pattern"
+        regex: "^HT-\\d{5}-AL$"
+        score: 0.8
+    context:
+      - TokenSerialNumber

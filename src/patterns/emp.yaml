@@ -1,0 +1,10 @@
+recognizers:
+  - name: "Employee ID Recognizer"
+    supported_entity: "EMPID" # this is displayed part
+    supported_language: "en"
+    patterns:
+      - name: "EMPID Pattern"
+        regex: "^EMP....."
+        score: 0.8
+    context:
+      - EMPID
