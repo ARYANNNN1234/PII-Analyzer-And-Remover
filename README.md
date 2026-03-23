@@ -33,7 +33,8 @@ This system acts as a **zero-trust compliance firewall**. It locally sanitizes d
 - `DATE_TIME` (Score: 0.85) ➡️ Contextual Identifier
 
 ## 🖥️ Dashboard Preview
-![Dashboard Preview](https://via.placeholder.com/800x400?text=Streamlit+UI+Dashboard+Preview)
+![Dashboard Preview](images/image 1.png)
+![Dashboard Preview](images/image 2.png)
 
 ## 🧠 AI Compliance Analysis (Gemini)
 Gemini 2.5 Flash operates strictly as a **compliance auditor**. Instead of generic summaries, the model is constrained via strict JSON schemas to output:
