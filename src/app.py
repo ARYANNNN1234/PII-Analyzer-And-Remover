@@ -43,24 +43,27 @@ def create_results_table(results: List[ProcessedFile]) -> str:
             {
                 "File Name": r.file_name,
                 "File Type": r.file_type,
-                "File Description": f"<b>{r.file_heading}</b>"
-                + "<br>"
-                + r.file_description,
-                "Key Findings": r.key_findings,
+                "Classification": f"<b>{r.doc_class}</b> ({r.doc_confidence})<br>{r.doc_reasoning}",
+                "PII Risk": r.pii_risk,
+                "Regulatory": r.regulatory_exposure,
+                "Residual Risk": r.residual_risk,
+                "Actions": r.recommended_actions,
             }
         )
         st.session_state["ppt_rows"].append(
             [
                 r.file_name,
                 r.file_type,
-                r.file_heading,
-                r.file_description,
-                r.key_findings,
+                f"{r.doc_class} ({r.doc_confidence})",
+                r.doc_reasoning,
+                r.regulatory_exposure + r.residual_risk + r.recommended_actions,
             ]
         )
 
     df = pd.DataFrame(table_rows)
-    df["Key Findings"] = df["Key Findings"].apply(list_to_html_ol)
+    for col in ["PII Risk", "Regulatory", "Residual Risk", "Actions"]:
+        if col in df.columns:
+            df[col] = df[col].apply(list_to_html_ol)
 
     return df.to_html(escape=False)
 
@@ -108,16 +111,21 @@ if uploaded_files:
                         else:
                             processed = ProcessedFile(
                                 file_name=file.name,
-                                file_type=filetypes[file.type],
-                                file_heading=data_from_pipeline["file_description"][
-                                    "heading"
-                                ],
-                                file_description=data_from_pipeline["file_description"][
-                                    "description"
-                                ],
-                                key_findings=data_from_pipeline["key_findings"],
+                                file_type=filetypes.get(file.type, ""),
+                                doc_class=data_from_pipeline.get("document_classification", {}).get("type", "Unknown"),
+                                doc_confidence=data_from_pipeline.get("document_classification", {}).get("confidence", "Unknown"),
+                                doc_reasoning=data_from_pipeline.get("document_classification", {}).get("reasoning", ""),
+                                pii_risk=data_from_pipeline.get("pii_risk_assessment", []),
+                                regulatory_exposure=data_from_pipeline.get("regulatory_exposure", []),
+                                residual_risk=data_from_pipeline.get("residual_risk", []),
+                                recommended_actions=data_from_pipeline.get("recommended_actions", []),
+                                detection_report=data_from_pipeline.get("detection_report", []),
                             )
                             results_map[_key(file)] = processed
+
+                            if processed.detection_report:
+                                st.sidebar.subheader(f"🔍 PII Confidence: {file.name}")
+                                st.sidebar.dataframe(pd.DataFrame(processed.detection_report), hide_index=True)
 
                             with results_container.container():
                                 st.subheader("File Analysis Output")
@@ -130,18 +138,19 @@ if uploaded_files:
                                     {
                                         "File Name": r.file_name,
                                         "File Type": r.file_type,
-                                        "File Description": f"<b>{r.file_heading}</b>"
-                                        + "<br>"
-                                        + r.file_description,
-                                        "Key Findings": r.key_findings,
+                                        "Classification": f"<b>{r.doc_class}</b> ({r.doc_confidence})<br>{r.doc_reasoning}",
+                                        "PII Risk": r.pii_risk,
+                                        "Regulatory": r.regulatory_exposure,
+                                        "Residual Risk": r.residual_risk,
+                                        "Actions": r.recommended_actions,
                                     }
                                     for r in current_results
                                 ]
                                 if table_rows:
                                     df = pd.DataFrame(table_rows)
-                                    df["Key Findings"] = df["Key Findings"].apply(
-                                        list_to_html_ol
-                                    )
+                                    for col in ["PII Risk", "Regulatory", "Residual Risk", "Actions"]:
+                                        if col in df.columns:
+                                            df[col] = df[col].apply(list_to_html_ol)
                                     st.markdown(
                                         df.to_html(escape=False),
                                         unsafe_allow_html=True,
@@ -160,9 +169,9 @@ if uploaded_files:
         [
             r.file_name,
             r.file_type,
-            r.file_heading,
-            r.file_description,
-            r.key_findings,
+            f"{r.doc_class} ({r.doc_confidence})",
+            r.doc_reasoning,
+            r.regulatory_exposure + r.residual_risk + r.recommended_actions,
         ]
         for r in current_results
     ]
@@ -174,15 +183,18 @@ if uploaded_files:
                     {
                         "File Name": r.file_name,
                         "File Type": r.file_type,
-                        "File Description": f"<b>{r.file_heading}</b>"
-                        + "<br>"
-                        + r.file_description,
-                        "Key Findings": r.key_findings,
+                        "Classification": f"<b>{r.doc_class}</b> ({r.doc_confidence})<br>{r.doc_reasoning}",
+                        "PII Risk": r.pii_risk,
+                        "Regulatory": r.regulatory_exposure,
+                        "Residual Risk": r.residual_risk,
+                        "Actions": r.recommended_actions,
                     }
                     for r in current_results
                 ]
             )
-            df["Key Findings"] = df["Key Findings"].apply(list_to_html_ol)
+            for col in ["PII Risk", "Regulatory", "Residual Risk", "Actions"]:
+                if col in df.columns:
+                    df[col] = df[col].apply(list_to_html_ol)
             st.subheader("File Analysis Output")
             st.markdown(df.to_html(escape=False), unsafe_allow_html=True)
         else:

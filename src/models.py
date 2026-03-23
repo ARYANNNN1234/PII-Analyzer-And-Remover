@@ -14,6 +14,11 @@ filetypes = {
 class ProcessedFile:
     file_name: str
     file_type: str
-    file_heading: str
-    file_description: str
-    key_findings: str
+    doc_class: str
+    doc_confidence: str
+    doc_reasoning: str
+    pii_risk: list
+    regulatory_exposure: list
+    residual_risk: list
+    recommended_actions: list
+    detection_report: list

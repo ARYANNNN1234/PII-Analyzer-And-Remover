@@ -1,0 +1,1902 @@
+[
+  {
+    "id": 1,
+    "text": "Please contact Allison Hill at donaldgarcia@example.net or call 819-600-1338. They work at Johnson, Gonzalez and Santos located in Robinsonshire, Fiji. Registration date is 2020-01-21. IP logged: 181.27.237.216. Paid with card 3554235116155942.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Allison Hill"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "donaldgarcia@example.net"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "819-600-1338"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Johnson, Gonzalez and Santos"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Robinsonshire, Fiji"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2020-01-21"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "181.27.237.216"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "3554235116155942"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "text": "Please contact Monica Herrera at smiller@example.net or call 959-310-3413. They work at James Group located in Franciscostad, Cote d'Ivoire. Registration date is 2025-09-13. IP logged: 120.146.59.122. Paid with card 3583276483503053.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Monica Herrera"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "smiller@example.net"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "959-310-3413"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "James Group"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Franciscostad, Cote d'Ivoire"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2025-09-13"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "120.146.59.122"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "3583276483503053"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "text": "Employee Austin Gentry from Ross, Robinson and Bright can be reached at 724-238-8496. Address: Daviston, Tokelau. Account 4916697848018451. Login IP 106.143.73.72 at 2020-12-06. Contact jason76@example.net.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Austin Gentry"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "jason76@example.net"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "724-238-8496"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Ross, Robinson and Bright"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Daviston, Tokelau"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2020-12-06"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "106.143.73.72"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "4916697848018451"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "text": "Patient Jeffrey Chavez (Johnbury, Turkey) was admitted on 2024-10-28. Next of kin email: teresa28@example.org. Billing phone: 489-325-2880. Network: 200.87.181.137.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Jeffrey Chavez"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "teresa28@example.org"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "489-325-2880"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Nguyen, Smith and Hickman"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Johnbury, Turkey"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2024-10-28"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "200.87.181.137"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "3518227824896383"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "text": "Patient Melissa Marquez (East Carloston, Tokelau) was admitted on 2022-10-23. Next of kin email: pcarney@example.com. Billing phone: 787-133-1509. Network: 79.59.119.203.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Melissa Marquez"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "pcarney@example.com"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "787-133-1509"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Hall, Robinson and Jones"
+      },
+      {
+        "type": "LOCATION",
+        "value": "East Carloston, Tokelau"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2022-10-23"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "79.59.119.203"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "4382997376311656679"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "text": "Patient Amy Valdez (Mortonside, Bolivia) was admitted on 2020-06-06. Next of kin email: brownjessica@example.org. Billing phone: 333-872-6247. Network: 128.241.202.234.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Amy Valdez"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "brownjessica@example.org"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "333-872-6247"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Baxter Inc"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Mortonside, Bolivia"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2020-06-06"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "128.241.202.234"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "2242677360260649"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "text": "Please contact Rachel Mitchell at smoore@example.org or call 098-050-0978. They work at Moore, Yu and Miller located in North Brooke, Peru. Registration date is 2021-12-31. IP logged: 47.193.254.5. Paid with card 3591699854353461.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Rachel Mitchell"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "smoore@example.org"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "098-050-0978"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Moore, Yu and Miller"
+      },
+      {
+        "type": "LOCATION",
+        "value": "North Brooke, Peru"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2021-12-31"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "47.193.254.5"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "3591699854353461"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "text": "We are processing a refund for Matthew Bryant to the card 4241182449353488. Address on file is Cherylhaven, Algeria. For questions, contact Mitchell-Kim at smithchristine@example.net or 118-384-2513. Processed at 2025-09-05 from IP 164.202.65.94.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Matthew Bryant"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "smithchristine@example.net"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "118-384-2513"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Mitchell-Kim"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Cherylhaven, Algeria"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2025-09-05"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "164.202.65.94"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "4241182449353488"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "text": "Please contact Taylor Mathis Jr. at ccalderon@example.org or call 524-278-6801. They work at Landry Ltd located in New Barry, Heard Island and McDonald Islands. Registration date is 2024-12-14. IP logged: 7.112.52.4. Paid with card 4450533158692324.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Taylor Mathis Jr."
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "ccalderon@example.org"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "524-278-6801"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Landry Ltd"
+      },
+      {
+        "type": "LOCATION",
+        "value": "New Barry, Heard Island and McDonald Islands"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2024-12-14"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "7.112.52.4"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "4450533158692324"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "text": "We are processing a refund for Rita Keith to the card 4868501429401965562. Address on file is East Andrew, Congo. For questions, contact Torres-Pope at whitesandra@example.com or 342-160-7337. Processed at 2023-05-22 from IP 36.113.99.188.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Rita Keith"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "whitesandra@example.com"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "342-160-7337"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Torres-Pope"
+      },
+      {
+        "type": "LOCATION",
+        "value": "East Andrew, Congo"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2023-05-22"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "36.113.99.188"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "4868501429401965562"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "text": "The server at 99.8.125.81 was accessed by Kayla Cruz on 2021-01-30. Please update the file for Mccullough, Hunter and Estrada. If urgent, call 883-561-5951 or email jonathanfletcher@example.org. Location recorded as Richardport, Micronesia. Card on file: 4994680443699573.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Kayla Cruz"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "jonathanfletcher@example.org"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "883-561-5951"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Mccullough, Hunter and Estrada"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Richardport, Micronesia"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2021-01-30"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "99.8.125.81"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "4994680443699573"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "text": "Please contact Michael Dixon at donnacampbell@example.net or call 951-343-3200. They work at Riggs PLC located in South Robertshire, Congo. Registration date is 2026-02-09. IP logged: 159.163.224.37. Paid with card 6011201632870836.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Michael Dixon"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "donnacampbell@example.net"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "951-343-3200"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Riggs PLC"
+      },
+      {
+        "type": "LOCATION",
+        "value": "South Robertshire, Congo"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2026-02-09"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "159.163.224.37"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "6011201632870836"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "text": "Please contact Barbara Anderson at jcontreras@example.net or call 579-868-7277. They work at Walton-Larsen located in Katiehaven, Libyan Arab Jamahiriya. Registration date is 2025-05-01. IP logged: 119.9.183.217. Paid with card 2263455812236234.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Barbara Anderson"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "jcontreras@example.net"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "579-868-7277"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Walton-Larsen"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Katiehaven, Libyan Arab Jamahiriya"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2025-05-01"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "119.9.183.217"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "2263455812236234"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "text": "Please contact Jason Daniels at abrown@example.com or call 909-670-5466. They work at Adkins, Payne and Morrison located in South Jeffrey, Jordan. Registration date is 2024-02-17. IP logged: 85.131.37.123. Paid with card 4272980699016271.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Jason Daniels"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "abrown@example.com"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "909-670-5466"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Adkins, Payne and Morrison"
+      },
+      {
+        "type": "LOCATION",
+        "value": "South Jeffrey, Jordan"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2024-02-17"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "85.131.37.123"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "4272980699016271"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "text": "Patient David Murphy (East Jamestown, Nigeria) was admitted on 2021-04-18. Next of kin email: wmurphy@example.com. Billing phone: 464-170-8053. Network: 119.147.180.195.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "David Murphy"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "wmurphy@example.com"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "464-170-8053"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Jones, Bernard and Williams"
+      },
+      {
+        "type": "LOCATION",
+        "value": "East Jamestown, Nigeria"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2021-04-18"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "119.147.180.195"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "4937452991241905"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "text": "Patient Laura Odonnell (Alexanderchester, Swaziland) was admitted on 2024-03-03. Next of kin email: tsanders@example.org. Billing phone: 193-149-1905. Network: 87.46.22.187.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Laura Odonnell"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "tsanders@example.org"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "193-149-1905"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Patterson, Wood and Hunter"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Alexanderchester, Swaziland"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2024-03-03"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "87.46.22.187"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "4262849877694534"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "text": "We are processing a refund for Angelica Keith to the card 30377701436343. Address on file is Angelahaven, Yemen. For questions, contact Ramirez-Carlson at karenhudson@example.net or 650-752-7354. Processed at 2021-08-16 from IP 90.2.235.24.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Angelica Keith"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "karenhudson@example.net"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "650-752-7354"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Ramirez-Carlson"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Angelahaven, Yemen"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2021-08-16"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "90.2.235.24"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "30377701436343"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "text": "We are processing a refund for Jackie Tran to the card 060482400847. Address on file is Tinaborough, French Polynesia. For questions, contact Lopez, Robinson and Washington at ronald85@example.com or 744-431-3518. Processed at 2021-12-07 from IP 51.88.90.47.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Jackie Tran"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "ronald85@example.com"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "744-431-3518"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Lopez, Robinson and Washington"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Tinaborough, French Polynesia"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2021-12-07"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "51.88.90.47"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "060482400847"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "text": "Please contact Beth Oneill at agarcia@example.net or call 477-752-0471. They work at Morales Inc located in East Edwardshire, Yemen. Registration date is 2022-08-01. IP logged: 79.226.92.80. Paid with card 2706999386774968.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Beth Oneill"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "agarcia@example.net"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "477-752-0471"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Morales Inc"
+      },
+      {
+        "type": "LOCATION",
+        "value": "East Edwardshire, Yemen"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2022-08-01"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "79.226.92.80"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "2706999386774968"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "text": "We are processing a refund for Marc Lynch to the card 4618324210249947176. Address on file is East Keithport, Reunion. For questions, contact Norris-Harrison at mezajared@example.org or 412-328-1206. Processed at 2023-11-11 from IP 78.240.106.97.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Marc Lynch"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "mezajared@example.org"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "412-328-1206"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Norris-Harrison"
+      },
+      {
+        "type": "LOCATION",
+        "value": "East Keithport, Reunion"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2023-11-11"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "78.240.106.97"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "4618324210249947176"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "text": "Patient Melissa Bender (South April, Kenya) was admitted on 2022-05-14. Next of kin email: mkim@example.org. Billing phone: 659-401-3990. Network: 99.124.177.68.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Melissa Bender"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "mkim@example.org"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "659-401-3990"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Underwood, Johnston and Hines"
+      },
+      {
+        "type": "LOCATION",
+        "value": "South April, Kenya"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2022-05-14"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "99.124.177.68"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "4175655125674681"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "text": "We are processing a refund for Brandon King to the card 3548086131712749. Address on file is West Samuel, Qatar. For questions, contact Ramos, Williams and Adams at cordovarichard@example.net or 087-603-8597. Processed at 2024-02-14 from IP 79.80.166.79.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Brandon King"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "cordovarichard@example.net"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "087-603-8597"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Ramos, Williams and Adams"
+      },
+      {
+        "type": "LOCATION",
+        "value": "West Samuel, Qatar"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2024-02-14"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "79.80.166.79"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "3548086131712749"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "text": "The server at 222.74.29.195 was accessed by Denise Davenport on 2024-03-01. Please update the file for Hoover-Campbell. If urgent, call 639-821-4658 or email jsanchez@example.org. Location recorded as Maryshire, Palestinian Territory. Card on file: 180055886753397.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Denise Davenport"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "jsanchez@example.org"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "639-821-4658"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Hoover-Campbell"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Maryshire, Palestinian Territory"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2024-03-01"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "222.74.29.195"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "180055886753397"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "text": "Patient Scott Jenkins (North Terrance, Estonia) was admitted on 2022-11-17. Next of kin email: julie66@example.net. Billing phone: 270-289-5171. Network: 153.112.93.229.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Scott Jenkins"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "julie66@example.net"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "270-289-5171"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Lozano, Smith and Thomas"
+      },
+      {
+        "type": "LOCATION",
+        "value": "North Terrance, Estonia"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2022-11-17"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "153.112.93.229"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "4586578091343169"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "text": "The server at 143.105.193.93 was accessed by Paige Padilla on 2023-04-03. Please update the file for Knight-Sparks. If urgent, call 050-455-6238 or email wallaceheather@example.org. Location recorded as East Christian, Trinidad and Tobago. Card on file: 30237474074822.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Paige Padilla"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "wallaceheather@example.org"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "050-455-6238"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Knight-Sparks"
+      },
+      {
+        "type": "LOCATION",
+        "value": "East Christian, Trinidad and Tobago"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2023-04-03"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "143.105.193.93"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "30237474074822"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "text": "We are processing a refund for Tony Huerta to the card 3543953394210478. Address on file is Hillshire, Tonga. For questions, contact Haney-Phillips at danielle64@example.com or 436-713-6959. Processed at 2025-10-31 from IP 177.145.197.60.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Tony Huerta"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "danielle64@example.com"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "436-713-6959"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Haney-Phillips"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Hillshire, Tonga"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2025-10-31"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "177.145.197.60"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "3543953394210478"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "text": "Employee Jacob Anderson from Harrell, Brock and Mcdonald can be reached at 285-884-2474. Address: East Karenbury, Tokelau. Account 180016048175499. Login IP 188.183.152.78 at 2025-10-02. Contact mark62@example.org.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Jacob Anderson"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "mark62@example.org"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "285-884-2474"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Harrell, Brock and Mcdonald"
+      },
+      {
+        "type": "LOCATION",
+        "value": "East Karenbury, Tokelau"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2025-10-02"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "188.183.152.78"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "180016048175499"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "text": "Please contact Mark Watson at thomasharvey@example.net or call 593-174-6120. They work at Torres Group located in North Jimmyside, Burkina Faso. Registration date is 2023-04-22. IP logged: 29.105.124.130. Paid with card 3561796405377357.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Mark Watson"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "thomasharvey@example.net"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "593-174-6120"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Torres Group"
+      },
+      {
+        "type": "LOCATION",
+        "value": "North Jimmyside, Burkina Faso"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2023-04-22"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "29.105.124.130"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "3561796405377357"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "text": "Patient Michael Stephens (New Jason, Trinidad and Tobago) was admitted on 2021-12-24. Next of kin email: bruce43@example.org. Billing phone: 713-900-5329. Network: 41.113.135.17.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Michael Stephens"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "bruce43@example.org"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "713-900-5329"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Jones PLC"
+      },
+      {
+        "type": "LOCATION",
+        "value": "New Jason, Trinidad and Tobago"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2021-12-24"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "41.113.135.17"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "3542284210205398"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "text": "The server at 168.218.64.137 was accessed by Christopher Williams on 2024-01-28. Please update the file for Acosta Ltd. If urgent, call 775-891-7839 or email vfox@example.org. Location recorded as Stephentown, Bahamas. Card on file: 4771159212499852.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Christopher Williams"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "vfox@example.org"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "775-891-7839"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Acosta Ltd"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Stephentown, Bahamas"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2024-01-28"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "168.218.64.137"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "4771159212499852"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "text": "Employee Kyle Phillips from Davis, Simmons and Ortega can be reached at 836-736-5766. Address: Stephaniefort, Bangladesh. Account 6011528098851656. Login IP 172.190.239.108 at 2020-10-10. Contact sgarcia@example.org.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Kyle Phillips"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "sgarcia@example.org"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "836-736-5766"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Davis, Simmons and Ortega"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Stephaniefort, Bangladesh"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2020-10-10"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "172.190.239.108"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "6011528098851656"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "text": "Employee Teresa Henderson from Wilson-Ramirez can be reached at 198-327-3158. Address: Port Roy, Monaco. Account 3502445502296126. Login IP 129.174.36.140 at 2025-04-15. Contact schmittcaroline@example.com.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Teresa Henderson"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "schmittcaroline@example.com"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "198-327-3158"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Wilson-Ramirez"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Port Roy, Monaco"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2025-04-15"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "129.174.36.140"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "3502445502296126"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "text": "Patient Valerie Davis (Stanleyfort, New Caledonia) was admitted on 2023-10-05. Next of kin email: nicholaschavez@example.org. Billing phone: 545-991-0229. Network: 45.203.225.198.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Valerie Davis"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "nicholaschavez@example.org"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "545-991-0229"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Craig LLC"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Stanleyfort, New Caledonia"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2023-10-05"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "45.203.225.198"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "213156149784038"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "text": "Patient Kyle Smith (Hensleyton, Jordan) was admitted on 2020-02-28. Next of kin email: sierra24@example.com. Billing phone: 510-762-2683. Network: 18.125.217.184.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Kyle Smith"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "sierra24@example.com"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "510-762-2683"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Hansen, Barnett and Gomez"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Hensleyton, Jordan"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2020-02-28"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "18.125.217.184"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "379664160529752"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "text": "Employee Ryan Sanchez from Bell-Mullen can be reached at 535-218-1883. Address: East Curtis, Equatorial Guinea. Account 4277997995527178. Login IP 106.114.39.150 at 2021-09-04. Contact zwarren@example.com.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Ryan Sanchez"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "zwarren@example.com"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "535-218-1883"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Bell-Mullen"
+      },
+      {
+        "type": "LOCATION",
+        "value": "East Curtis, Equatorial Guinea"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2021-09-04"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "106.114.39.150"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "4277997995527178"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "text": "Please contact Eric Hill at bellcharles@example.com or call 700-541-1998. They work at Ford-Spencer located in South Reginashire, Pakistan. Registration date is 2021-08-07. IP logged: 62.112.180.185. Paid with card 213107151820376.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Eric Hill"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "bellcharles@example.com"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "700-541-1998"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Ford-Spencer"
+      },
+      {
+        "type": "LOCATION",
+        "value": "South Reginashire, Pakistan"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2021-08-07"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "62.112.180.185"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "213107151820376"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "text": "Please contact Kelly Bishop MD at paul59@example.org or call 515-186-4492. They work at Miller-Alvarado located in Kylefurt, Bulgaria. Registration date is 2025-01-22. IP logged: 133.108.9.76. Paid with card 4528168505423573320.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Kelly Bishop MD"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "paul59@example.org"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "515-186-4492"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Miller-Alvarado"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Kylefurt, Bulgaria"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2025-01-22"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "133.108.9.76"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "4528168505423573320"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "text": "The server at 119.129.22.128 was accessed by Edward French on 2024-07-17. Please update the file for Diaz-Ball. If urgent, call 296-222-9270 or email stanleynancy@example.net. Location recorded as Bishopmouth, Djibouti. Card on file: 4977468862391.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Edward French"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "stanleynancy@example.net"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "296-222-9270"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Diaz-Ball"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Bishopmouth, Djibouti"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2024-07-17"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "119.129.22.128"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "4977468862391"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "text": "Please contact David Davidson at angela18@example.org or call 412-478-2613. They work at Wilkerson-Arias located in Brownhaven, Holy See (Vatican City State). Registration date is 2022-01-02. IP logged: 37.57.6.3. Paid with card 340515220472779.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "David Davidson"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "angela18@example.org"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "412-478-2613"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Wilkerson-Arias"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Brownhaven, Holy See (Vatican City State)"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2022-01-02"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "37.57.6.3"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "340515220472779"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "text": "Employee Susan Smith from Fowler-Dean can be reached at 986-143-4103. Address: North Maryfort, Nepal. Account 3546095396218518. Login IP 79.123.234.18 at 2024-07-23. Contact marydunn@example.net.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Susan Smith"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "marydunn@example.net"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "986-143-4103"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Fowler-Dean"
+      },
+      {
+        "type": "LOCATION",
+        "value": "North Maryfort, Nepal"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2024-07-23"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "79.123.234.18"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "3546095396218518"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "text": "Employee Kimberly Hartman from Sherman, Anderson and Bell can be reached at 654-051-5319. Address: Lisaburgh, Switzerland. Account 4217043030548680. Login IP 31.80.32.155 at 2025-10-28. Contact myerstheodore@example.net.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Kimberly Hartman"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "myerstheodore@example.net"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "654-051-5319"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Sherman, Anderson and Bell"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Lisaburgh, Switzerland"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2025-10-28"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "31.80.32.155"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "4217043030548680"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "text": "We are processing a refund for Andrew Lucas to the card 5354479627570598. Address on file is Lake Rogerchester, Netherlands. For questions, contact Glass-Stone at michael05@example.com or 156-676-5277. Processed at 2021-07-14 from IP 6.145.215.76.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Andrew Lucas"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "michael05@example.com"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "156-676-5277"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Glass-Stone"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Lake Rogerchester, Netherlands"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2021-07-14"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "6.145.215.76"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "5354479627570598"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "text": "Employee Mrs. Veronica Gould MD from Reyes-Bradley can be reached at 202-970-2135. Address: Lake Shannon, Heard Island and McDonald Islands. Account 3585654310278685. Login IP 18.117.216.110 at 2023-03-01. Contact zcox@example.net.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Mrs. Veronica Gould MD"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "zcox@example.net"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "202-970-2135"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Reyes-Bradley"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Lake Shannon, Heard Island and McDonald Islands"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2023-03-01"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "18.117.216.110"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "3585654310278685"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "text": "Please contact Reginald Padilla at wendymitchell@example.com or call 312-172-7155. They work at Brown, Daniels and Vance located in Lake Jenna, Reunion. Registration date is 2025-06-04. IP logged: 109.200.172.6. Paid with card 213113237058957.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Reginald Padilla"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "wendymitchell@example.com"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "312-172-7155"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Brown, Daniels and Vance"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Lake Jenna, Reunion"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2025-06-04"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "109.200.172.6"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "213113237058957"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "text": "The server at 209.197.241.43 was accessed by William Anderson on 2024-04-11. Please update the file for Frazier-Cooper. If urgent, call 786-691-2517 or email jonesraymond@example.net. Location recorded as Port Tammy, Jersey. Card on file: 2624225358414386.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "William Anderson"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "jonesraymond@example.net"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "786-691-2517"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Frazier-Cooper"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Port Tammy, Jersey"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2024-04-11"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "209.197.241.43"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "2624225358414386"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "text": "We are processing a refund for Mario Mendez to the card 30364710276779. Address on file is Montgomerytown, Luxembourg. For questions, contact Wise, Baker and Clark at shawgary@example.net or 229-959-0010. Processed at 2025-05-02 from IP 6.106.176.81.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Mario Mendez"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "shawgary@example.net"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "229-959-0010"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Wise, Baker and Clark"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Montgomerytown, Luxembourg"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2025-05-02"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "6.106.176.81"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "30364710276779"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "text": "Please contact Lawrence Edwards at jessica56@example.org or call 588-153-7147. They work at Thomas Inc located in Soniachester, Egypt. Registration date is 2021-05-11. IP logged: 165.0.225.92. Paid with card 4787747016879.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Lawrence Edwards"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "jessica56@example.org"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "588-153-7147"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Thomas Inc"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Soniachester, Egypt"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2021-05-11"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "165.0.225.92"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "4787747016879"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "text": "The server at 12.121.188.99 was accessed by Cindy Gomez on 2023-04-15. Please update the file for Williams-Williams. If urgent, call 748-016-2456 or email campbellcarla@example.net. Location recorded as West Angela, Barbados. Card on file: 3521655852398689.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Cindy Gomez"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "campbellcarla@example.net"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "748-016-2456"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Williams-Williams"
+      },
+      {
+        "type": "LOCATION",
+        "value": "West Angela, Barbados"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2023-04-15"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "12.121.188.99"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "3521655852398689"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "text": "Please contact Andrew Reeves at jstone@example.net or call 825-952-6949. They work at Romero-Hicks located in Ericksonport, Lebanon. Registration date is 2020-02-21. IP logged: 39.3.194.247. Paid with card 6509749930972893.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Andrew Reeves"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "jstone@example.net"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "825-952-6949"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Romero-Hicks"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Ericksonport, Lebanon"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2020-02-21"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "39.3.194.247"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "6509749930972893"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "text": "We are processing a refund for Jamie Underwood to the card 180052785854970. Address on file is Lake Devinborough, Monaco. For questions, contact Knapp, Salas and Fitzgerald at anthonyvaughan@example.org or 307-562-6368. Processed at 2022-10-06 from IP 198.125.59.66.",
+    "expected_entities": [
+      {
+        "type": "PERSON",
+        "value": "Jamie Underwood"
+      },
+      {
+        "type": "EMAIL_ADDRESS",
+        "value": "anthonyvaughan@example.org"
+      },
+      {
+        "type": "PHONE_NUMBER",
+        "value": "307-562-6368"
+      },
+      {
+        "type": "ORGANIZATION",
+        "value": "Knapp, Salas and Fitzgerald"
+      },
+      {
+        "type": "LOCATION",
+        "value": "Lake Devinborough, Monaco"
+      },
+      {
+        "type": "DATE_TIME",
+        "value": "2022-10-06"
+      },
+      {
+        "type": "IP_ADDRESS",
+        "value": "198.125.59.66"
+      },
+      {
+        "type": "CREDIT_CARD",
+        "value": "180052785854970"
+      }
+    ]
+  }
+]

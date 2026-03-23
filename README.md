@@ -38,9 +38,28 @@ A sophisticated **Streamlit-based security analysis tool** that automatically re
 
 ## Quick Start
 
-### Prerequisites
+### Run locally via Docker in 2 commands (Recommended)
+
+You can run the entire application—securely containerized with all system dependencies (like Tesseract OCR for image redaction)—using Docker Compose.
+
+1. Ensure your `.env` file has your API key:
+   ```bash
+   echo "GEMINI_API_KEY=your_api_key_here" > .env
+   ```
+2. Start the container:
+   ```bash
+   docker compose up --build
+   ```
+   Open `http://localhost:8501`.
+
+---
+
+### Local Installation (Without Docker)
+
+#### Prerequisites
 - Python 3.12 or higher
 - Google Gemini API key
+- **Tesseract OCR**: must be installed and in your system PATH for image redaction to work
 
 ### Installation
 

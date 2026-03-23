@@ -47,25 +47,33 @@ if not GEMINI_API_KEY:
 client = genai.Client(api_key=GEMINI_API_KEY)
 
 
-prompt = """You are a security consultant. Analyse and provide insights in a few lines. Don't add any additional text."""
+SYSTEM_PROMPT = """You are a senior data privacy and security analyst specializing in regulatory compliance (GDPR, CCPA, HIPAA).
+You are analyzing documents that have already been sanitized/redacted by a PII removal engine.
+Your job is to provide a structured privacy and security assessment based on the contextual clues remaining in the text or image.
 
-prompt_for_image = "The heading should be the key device or software in the image. The description should be a brief summary of the security aspects depicted in the image."
+You MUST explicitly avoid hallucinating or guessing the hidden original values from the redacted text. Focus on the *types* of information and the structural risk.
 
-prompt_for_output = """Generate a JSON object based on a security analysis.
-The JSON object must have the following structure:
-1.  A top-level key named "file_description". Its value must be a JSON object containing:
-    - A key "heading" with a string value.
-    - A key "description" with a string value.
-2.  A top-level key named "key_findings". Its value must be an array of three to four strings, where each string is a distinct security finding, it can be advantages, disadvantages or general info.
+For each document, provide:
+1. Document classification (e.g., contract, HR record, financial, medical, internal comms)
+2. PII risk assessment — what categories of PII were likely present based on context clues
+3. Regulatory exposure — which regulations this document likely falls under
+4. Residual risk — any sensitive patterns or context that may have survived redaction
+5. Recommended next actions — specific security or compliance steps
 
-Here is the exact format to follow:
+Respond ONLY in the exact JSON format specified. Be specific, analytical, and professional."""
+
+prompt_for_output = """Generate a JSON object containing your privacy analysis.
+The JSON object must have the exact following structure:
 {
-  "file_description": {
-    "heading": "",
-    "description": ""
+  "document_classification": {
+    "type": "string",
+    "confidence": "string (High, Medium, Low)",
+    "reasoning": "string"
   },
-  "key_findings": [
-  ]
+  "pii_risk_assessment": [ "string", "string" ],
+  "regulatory_exposure": [ "string", "string" ],
+  "residual_risk": [ "string", "string" ],
+  "recommended_actions": [ "string", "string" ]
 }"""
 if_multiple_occurrences = "If a text appears across multiple images without any symantic meaning consider it to be brand name and ignore it."
 
@@ -80,8 +88,7 @@ def analyze_image_with_gemini(image):
         response = client.models.generate_content(
             model="gemini-2.5-flash",
             contents=[
-                prompt,
-                prompt_for_image,
+                SYSTEM_PROMPT,
                 prompt_for_output,
                 genai.types.Part.from_bytes(data=data, mime_type="image/png"),
             ],
@@ -106,7 +113,7 @@ def analyze_dataframe_with_gemini(df):
         response = client.models.generate_content(
             model="gemini-2.5-flash",
             contents=[
-                prompt,
+                SYSTEM_PROMPT,
                 content,
                 prompt_for_output,
                 "There could be some inconsistency in the data, or it could contain NaN values. Please ignore those.",
@@ -135,7 +142,7 @@ def analyze_embedded_image_with_gemini(image):
         response = client.models.generate_content(
             model="gemini-2.5-flash",
             contents=[
-                prompt,
+                SYSTEM_PROMPT,
                 genai.types.Part.from_bytes(data=data, mime_type="image/png"),
             ],
             config=genai.types.GenerateContentConfig(
@@ -156,7 +163,7 @@ def analyze_ppt_with_gemini(text, tables, images):
         content = f"The following text:{text}, tables:{tables},and images:{images} were found in the pptx file."
         response = client.models.generate_content(
             model="gemini-2.5-flash",
-            contents=[prompt, content, prompt_for_output, if_multiple_occurrences],
+            contents=[SYSTEM_PROMPT, content, prompt_for_output, if_multiple_occurrences],
             config=types.GenerateContentConfig(
                 thinking_config=types.ThinkingConfig(thinking_budget=0),
                 response_mime_type="application/json",
@@ -175,7 +182,7 @@ def analyze_pdf_with_gemini(text, images):
         content = f"The following text:{text}, and images:{images} were found in the pdf file."
         response = client.models.generate_content(
             model="gemini-2.5-flash",
-            contents=[prompt, content, prompt_for_output],
+            contents=[SYSTEM_PROMPT, content, prompt_for_output],
             config=types.GenerateContentConfig(
                 thinking_config=types.ThinkingConfig(thinking_budget=0),
                 response_mime_type="application/json",

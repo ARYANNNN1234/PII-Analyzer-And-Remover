@@ -22,7 +22,7 @@ def create_presentation(data):
     subtitle.text = (  # type: ignore
         "Case Study Solution Presentation"
         "\nGroup Number: 45"
-        "\nTeam Members: Aryan, Alok, Monnisha, Anamika"
+        "\nTeam Members: Aryan, Ashish, Alok, Anamika"
     )
 
     slide_layout_content = prs.slide_layouts[1]
@@ -62,7 +62,7 @@ def create_presentation(data):
     height = Inches(3)
     system_design_slide.shapes.add_picture(img_path, left, top, height=height)
 
-    ppt_headers = ["File Name", "File Type", "File Description", "Key Findings"]
+    ppt_headers = ["File Name", "File", "Classification", "Analysis & Actions"]
     rows_per_slide = 2
     num_data_slides = math.ceil(len(data) / rows_per_slide)
 

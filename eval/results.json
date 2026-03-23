@@ -1,0 +1,49 @@
+{
+  "overall": {
+    "precision": 0.7603,
+    "recall": 0.8725,
+    "f1": 0.8126
+  },
+  "by_type": {
+    "PERSON": {
+      "precision": 0.5319,
+      "recall": 1.0,
+      "f1": 0.6944
+    },
+    "EMAIL_ADDRESS": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PHONE_NUMBER": {
+      "precision": 0.6812,
+      "recall": 0.94,
+      "f1": 0.7899
+    },
+    "ORGANIZATION": {
+      "precision": 0.6571,
+      "recall": 0.46,
+      "f1": 0.5412
+    },
+    "LOCATION": {
+      "precision": 0.6,
+      "recall": 0.96,
+      "f1": 0.7385
+    },
+    "DATE_TIME": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "IP_ADDRESS": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "CREDIT_CARD": {
+      "precision": 1.0,
+      "recall": 0.62,
+      "f1": 0.7654
+    }
+  }
+}

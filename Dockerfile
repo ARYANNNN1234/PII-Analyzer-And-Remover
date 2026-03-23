@@ -1,28 +1,27 @@
 FROM python:3.12-slim
 
-WORKDIR /app
-
+# Install system dependencies required for OCR (Image Redaction)
 RUN apt-get update && apt-get install -y \
-    build-essential \
-    curl \
-    git \
-    libgl1 \
-    libglib2.0-0 \
     tesseract-ocr \
     && rm -rf /var/lib/apt/lists/*
 
-COPY pyproject.toml ./
+WORKDIR /app
 
-RUN pip3 install --no-cache-dir spacy
+# Copy dependency definitions
+COPY pyproject.toml README.md ./
 
-RUN pip3 install --no-cache-dir .
+# We upgrade pip to ensure smooth installation, then install project packages
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir .
 
+# Download the spaCy model required by Presidio
+RUN python -m spacy download en_core_web_lg
+
+# Copy application code
 COPY src/ ./src/
-
-ENV PYTHONPATH=/app/src
+COPY main.py .
 
 EXPOSE 8501
 
-HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
-
-ENTRYPOINT ["streamlit", "run", "src/better_ui.py", "--server.port=8501", "--server.address=0.0.0.0"]
+# Run the Streamlit app
+CMD ["streamlit", "run", "src/app.py", "--server.port=8501", "--server.address=0.0.0.0"]

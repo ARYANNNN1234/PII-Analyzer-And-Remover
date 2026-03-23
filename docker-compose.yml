@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  pii-analyzer:
+    build: .
+    container_name: pii-analyzer-app
+    ports:
+      - "8501:8501"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    # Mount the src directory to enable hot-reloading during development
+    volumes:
+      - ./src:/app/src
+    restart: unless-stopped
