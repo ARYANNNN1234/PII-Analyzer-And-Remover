@@ -11,6 +11,7 @@ from presidio_image_redactor import ImageRedactorEngine
 
 from helpers import my_logger
 from presidio_nlp_engine_config import create_nlp_engine_with_spacy
+from compliance.gdpr_mapping import get_gdpr_reference
 
 
 @st.cache_resource(show_spinner=False)
@@ -47,7 +48,17 @@ def remove_pii_from_text(input_text):
         # col1.write(input_text)
         # col2.write(anonymized_text.text)
 
-        return anonymized_text.text
+        report = [
+            {
+                "Entity": r.entity_type,
+                "Score": round(r.score, 3),
+                "GDPR Reference": get_gdpr_reference(r.entity_type),
+                "Snippet": input_text[r.start:r.end][:30] + "..." if len(input_text[r.start:r.end]) > 30 else input_text[r.start:r.end]
+            }
+            for r in results
+        ]
+
+        return anonymized_text.text, report
     except Exception as e:
         my_logger.error(f"Error removing pii from text: {e}")
         raise
@@ -89,6 +100,7 @@ def remove_pii_from_image(input_file):
 def remove_pii_from_df(df):
     try:
         anonymized_df = df.copy()
+        report = []
         for column in anonymized_df.select_dtypes(include=["object"]).columns:
             for index, value in anonymized_df[column].items():
                 if isinstance(value, str):
@@ -103,6 +115,13 @@ def remove_pii_from_df(df):
                             analyzer_results=results,  # type: ignore
                         )
                         anonymized_df.at[index, column] = anonymized_value.text
+                        for r in results:
+                            report.append({
+                                "Entity": r.entity_type,
+                                "Score": round(r.score, 3),
+                                "GDPR Reference": get_gdpr_reference(r.entity_type),
+                                "Snippet": value[r.start:r.end][:30] + "..." if len(value[r.start:r.end]) > 30 else value[r.start:r.end]
+                            })
 
         # Debug: Display original DataFrame and anonymized DataFrame
 
@@ -110,7 +129,7 @@ def remove_pii_from_df(df):
         # col1.dataframe(df)
         # col2.dataframe(anonymized_df)
 
-        return anonymized_df
+        return anonymized_df, report
     except Exception as e:
         my_logger.error(f"Error removing pii from dataframe: {e}")
         raise

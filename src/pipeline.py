@@ -35,8 +35,9 @@ def get_set_go(input_file) -> dict:
                 pii_removed_image = remove_pii_from_image(input_file)
 
                 analyzed_text_json = analyze_image_with_gemini(pii_removed_image)
-
-                return json.loads(analyzed_text_json)  # type: ignore
+                analyzed_dict = json.loads(analyzed_text_json)  # type: ignore
+                analyzed_dict["detection_report"] = []
+                return analyzed_dict
             except Exception as e:
                 my_logger.error(f"Error processing image file {input_file.name}: {e}")
                 return {"error": str(e)}
@@ -48,13 +49,15 @@ def get_set_go(input_file) -> dict:
             try:
                 df = pd.read_excel(input_file)
 
-                anonymized_df = remove_pii_from_df(df.copy())
+                anonymized_df, report = remove_pii_from_df(df.copy())
 
                 analyzed_text_json = analyze_dataframe_with_gemini(anonymized_df)
 
                 # my_logger.info(f"Excel DataFrame:\n{df.head()}")
 
-                return json.loads(analyzed_text_json)  # type: ignore
+                analyzed_dict = json.loads(analyzed_text_json)  # type: ignore
+                analyzed_dict["detection_report"] = report
+                return analyzed_dict
 
             except Exception as e:
                 my_logger.error(f"Error processing Excel file {input_file.name}: {e}")
@@ -69,17 +72,21 @@ def get_set_go(input_file) -> dict:
 
                 text = extracted_content_from_pptx["text"]
                 sanitized_text = []
+                report_agg = []
                 if text:
                     for texts in text:
-                        sanitized_text.append(remove_pii_from_text(texts))
+                        anon_text, rep = remove_pii_from_text(texts)
+                        sanitized_text.append(anon_text)
+                        report_agg.extend(rep)
 
                 tables = extracted_content_from_pptx["tables"]
                 anonymized_df = []
                 if tables:
                     for table in tables:
                         df = pd.DataFrame(table[1:], columns=table[0])
-                        anonymized_table = remove_pii_from_df(df.copy())
+                        anonymized_table, rep = remove_pii_from_df(df.copy())
                         anonymized_df.append(anonymized_table)
+                        report_agg.extend(rep)
 
                 images = extracted_content_from_pptx["images"]
                 image_analysis_by_ai = []
@@ -115,7 +122,9 @@ def get_set_go(input_file) -> dict:
                     sanitized_text, anonymized_df, image_analysis_by_ai
                 )
 
-                return json.loads(analyzed_text_json)  # type: ignore
+                analyzed_dict = json.loads(analyzed_text_json)  # type: ignore
+                analyzed_dict["detection_report"] = report_agg
+                return analyzed_dict
 
             except Exception as e:
                 my_logger.error(f"Error processing PPTX file {input_file.name}: {e}")
@@ -128,9 +137,12 @@ def get_set_go(input_file) -> dict:
 
                 text = extracted_content_from_pdf["text"]
                 sanitized_text = []
+                report_agg = []
                 if text:
                     for texts in text:
-                        sanitized_text.append(remove_pii_from_text(texts))
+                        anon_text, rep = remove_pii_from_text(texts)
+                        sanitized_text.append(anon_text)
+                        report_agg.extend(rep)
 
                 images = extracted_content_from_pdf["images"]
                 image_analysis_by_ai = []
@@ -147,7 +159,9 @@ def get_set_go(input_file) -> dict:
                     sanitized_text, image_analysis_by_ai
                 )
 
-                return json.loads(analyzed_text_json)  # type: ignore
+                analyzed_dict = json.loads(analyzed_text_json)  # type: ignore
+                analyzed_dict["detection_report"] = report_agg
+                return analyzed_dict
 
             except Exception as e:
                 my_logger.error(f"Error processing PDF file {input_file.name}: {e}")
